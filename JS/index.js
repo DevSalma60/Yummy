@@ -147,10 +147,6 @@ $("#search").on("click", async function () {
   });
 });
 
-// $('.food').on('click', function(e){
-//     console.log(e.target.innerText);
-// })
-
 function searchDisplay() {
   let col = "";
   for (let i = 0; i < dataMeal.length; i++) {
@@ -489,40 +485,40 @@ $("#contact").on("click", function () {
   $("#sideBar").animate({ left: "-260px" }, 600);
   $("#menus").animate({ left: "-110px", top: "120px", height: "10px" }, 500);
   $("#menus li").animate({ top: "90px", opacity: "0" }, 200);
-  mainRow.innerHTML = `<div class="col-md-10 offset-1 cont d-flex justify-content-center align-items-center">
+  mainRow.innerHTML = `<div class="col-md-11 cont">
   <form id="form" class="text-center">
     <div class="row gy-3">
-      <div class="col-md-6">
+      <div class="col-md-6 ">
         <div class="nameinput">
           <input id="nameinput" type="text" placeholder="Enter Your Name" class="form-control">
           <div id="nameAlret" class="d-none mt-1 alert alert-danger">Special characters and numbers not allowed</div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 ">
         <div class="emailinput">
           <input id="emailinput" type="email" placeholder="Enter Your Email" class="form-control">
           <div id="emailAlret" class="d-none mt-1 alert alert-danger">Email not valid *exemple@yyy.zzz</div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 ">
         <div class="phoneinput">
           <input id="phoneinput" type="tel" placeholder="Enter Your Phone" class="form-control">
           <div id="phoneAlret" class="d-none mt-1 alert alert-danger">Enter valid Phone Number</div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 ">
         <div class="ageinput">
           <input id="ageinput" type="number" placeholder="Enter Your Age" class="form-control">
           <div id="ageAlret" class="d-none mt-1 alert alert-danger">Enter valid age</div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 ">
         <div class="passinput">
           <input id="passinput" type="password" placeholder="Enter Your Password" class="form-control">
           <div id="passAlret" class="d-none mt-1 alert alert-danger">Enter valid password *Minimum eight characters, at least one letter and one number:*</div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 ">
         <div class="repassinput">
           <input id="repassinput" type="password" placeholder="Repassword" class="form-control">
           <div id="repassAlret" class="d-none mt-1 alert alert-danger">Enter valid repassword</div>
