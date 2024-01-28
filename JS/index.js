@@ -428,6 +428,7 @@ $("#ingredients").on("click", async function () {
     intDisplay();
     $(".food").on("click", function (e) {
       let MealCat = $(e.target).parent().children("h3").html();
+      console.log(MealCat)
       instMealDisplay(MealCat);
     });
   });
@@ -450,7 +451,7 @@ function intDisplay() {
 
 async function instMealDisplay(mealCat) {
   let response = await fetch(
-    `http://www.themealdb.com/api/json/v1/1/filter.php?i=${mealCat}`
+    `https://www.themealdb.com/api/json/v1/1/filter.php?i=${mealCat}`
   );
   let finalResponse = await response.json();
   dataMeal = finalResponse.meals;
